@@ -59,6 +59,9 @@ class ViewController: UIViewController {
             operation = "addition"
             firstNum = Double(outputLabel.text!)!
             outputLabel.text!.removeAll()
+        case "%":
+            firstNum = Double(outputLabel.text!)!
+            outputLabel.text = String(firstNum / 100)
         default:
             print("Cannot access operator button.")
         }
